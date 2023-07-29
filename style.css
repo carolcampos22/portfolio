@@ -10,8 +10,10 @@ body {
 .header-container {
     height: 100vh;
     width: 100vw;
-    background-color: #60e1e0;
-    background-image: url('./assets/img.jpg');
+    background-image: radial-gradient(circle at -14.09% 20.12%, #ffb790 0, #ffac96 8.33%, #ffa19b 16.67%, #ff949d 25%, #ff879c 33.33%, #f67a97 41.67%, #d86c8f 50%, #ba5f85 58.33%, #a0547b 66.67%, #894b72 75%, #75446a 83.33%, #653e64 91.67%, #583b5f 100%);
+    /**/
+    /*background-image: linear-gradient(to right, #a56ec1, #0d0863);*/
+    /*background-image: url('./assets/img.jpg');*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -174,7 +176,7 @@ a:hover {
 #toggle:checked ~ .menu-items {
     visibility: visible;
     opacity: 1;
-    background-color: pink;
+    background-color: blueviolet;
 }
 
 .container {
@@ -274,10 +276,21 @@ a:hover {
     font-size: 14px;
 }
 
+.container-data-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-data-img img {
+    margin-left: 25vw;
+    width: 30vw;
+}
+
 .footer {
     width: 100%;
     height: 100px;
-    background-color: #60e1e0;
+    background-image: radial-gradient(circle at -14.09% 20.12%, #ffb790 0, #ffac96 8.33%, #ffa19b 16.67%, #ff949d 25%, #ff879c 33.33%, #f67a97 41.67%, #d86c8f 50%, #ba5f85 58.33%, #a0547b 66.67%, #894b72 75%, #75446a 83.33%, #653e64 91.67%, #583b5f 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
