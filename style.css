@@ -295,6 +295,16 @@ a:hover {
     margin-top: 10vh;
 }
 
+
+header {
+    background-color: rgb(154, 21, 87);
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
 .main-projects {
     display: flex;
     flex-wrap: wrap;
@@ -302,8 +312,10 @@ a:hover {
     align-items: center;
     gap: 5vw;
     min-height: 85vh;
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
+    background-color: lightgray;
+    padding: 5vh 0 5vh 0;
 }
 
 .main-projects h3, p{
@@ -316,14 +328,22 @@ a:hover {
 }
 
 .main-projects img {
-    width: 15vw;
-    
+    width: 15vw;    
 }
 
 .card-bs {
-    background-color: pink;
+    background-color: #fff;
     padding: 1vw;
+    border-radius: 15px;
+    border: 2px solid hotpink;
+    /*box-shadow: 10px 10px lightgray;*/
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
 }
+
+
+
+
 
 .footer {
     width: 100%;
