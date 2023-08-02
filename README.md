@@ -34,6 +34,7 @@ Aqui você encontrará minhas informações acadêmicas e profissionais, minha t
 <img src="./assets/prints/sobre.png" />
 
 ### Link do projeto
+https://portfolio-sigma-ashy-79.vercel.app/
 
 ### Autora
 
