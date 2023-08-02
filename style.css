@@ -84,6 +84,7 @@ a:hover {
     position: absolute;
     border-radius: 4px;
     transition: 0.5s ease-in-out;
+    margin-right: 3vw;
 }
 
 .checkbox .trace:nth-child(1) {
@@ -300,9 +301,40 @@ header {
     background-color: rgb(154, 21, 87);
     height: 20vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    
+}
+
+.header-projects {
+    color: #fff;
+}
+
+.header-projects a {
+    margin-right: 85vw;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+
+.header-projects a:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.main-about{
+    min-height: 69vh;
+    background-color: lightgray;
+    margin-top: -2vh;
+}
+
+.text-about {
+    width: 60vw;
+    margin: 0 auto;
 }
 
 .main-projects {
@@ -336,13 +368,9 @@ header {
     padding: 1vw;
     border-radius: 15px;
     border: 2px solid hotpink;
-    /*box-shadow: 10px 10px lightgray;*/
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     
 }
-
-
-
 
 
 .footer {
@@ -358,4 +386,40 @@ header {
 
 .footer p:nth-child(1){
     font-size: 2vh;
+}
+
+@media (max-width: 1030px){
+    .container-data-img{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-media, .container-data-img h1,h2{
+        margin-left: 3vw;
+    }
+
+    .header-projects a{
+        margin-right: 70vw;
+    }
+}
+
+@media (max-width: 760px){
+    .social-media, .container-data-img h1,h2{
+        margin-right: 3vw;
+    }
+
+    .container-data-img{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: -8vw;
+    }
+
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
