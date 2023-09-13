@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Jolly+Lodger&family=Leckerli+One&family=Poppins:wght@400;500;700&family=Rajdhani:wght@400;600&family=Roboto:wght@100;300;500;700&family=Rock+Salt&family=Satisfy&family=Staatliches&family=Underdog&family=VT323&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: o;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     color: #1e1e24;
+    
 }
+
 
 .header-container {
     height: 100vh;
@@ -360,7 +368,7 @@ header {
 }
 
 .main-projects img {
-    width: 15vw;    
+    width: 12vw;    
 }
 
 .card-bs {
@@ -372,6 +380,27 @@ header {
     
 }
 
+#btn-languages{
+    background-color: purple;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    margin: .6vh;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+#btn-languages:hover{
+    background-color: #b70b80;
+    cursor: pointer;
+
+}
+
+#btn-languages:active{
+    background-color: transparent;
+}
 
 .footer {
     width: 100%;
