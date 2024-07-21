@@ -14,17 +14,22 @@ body {
     
 }
 
+:root {
+    --main-color: aqua;
+}
+
 
 .header-container {
     height: 100vh;
     width: 100vw;
-    background-image: radial-gradient(circle at -14.09% 20.12%, #ffb790 0, #ffac96 8.33%, #ffa19b 16.67%, #ff949d 25%, #ff879c 33.33%, #f67a97 41.67%, #d86c8f 50%, #ba5f85 58.33%, #a0547b 66.67%, #894b72 75%, #75446a 83.33%, #653e64 91.67%, #583b5f 100%);
+    background-color: var(--main-color);
+    /* background-image: radial-gradient(circle at -14.09% 20.12%, #ffb790 0, #ffac96 8.33%, #ffa19b 16.67%, #ff949d 25%, #ff879c 33.33%, #f67a97 41.67%, #d86c8f 50%, #ba5f85 58.33%, #a0547b 66.67%, #894b72 75%, #75446a 83.33%, #653e64 91.67%, #583b5f 100%); */
     /**/
     /*background-image: linear-gradient(to right, #a56ec1, #0d0863);*/
     /*background-image: url('./assets/img.jpg');*/
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: contain; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -185,7 +190,7 @@ a:hover {
 #toggle:checked ~ .menu-items {
     visibility: visible;
     opacity: 1;
-    background-color: blueviolet;
+    background-color: rgb(0, 199, 199);
 }
 
 .container {
@@ -216,7 +221,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #b70b80;
+    background-color: var(--main-color);
     /* background-image: url('./assets/background.jpg');
     background-position: center;
     background-size: cover;
@@ -251,7 +256,7 @@ a:hover {
     width: 100px;
     border-radius: 50%;
     display: block;
-    border: 1px solid #ffffff;
+    border: 2px solid #ffffff;
     opacity: 0;
     transition: 0.5s ease-in-out;
 }
@@ -304,9 +309,13 @@ a:hover {
     margin-top: 10vh;
 }
 
+.perfil-img img {
+    width: 30vw;
+}
+
 
 header {
-    background-color: rgb(154, 21, 87);
+    background-color: var(--main-color);
     height: 20vh;
     display: flex;
     flex-direction: column;
@@ -316,27 +325,29 @@ header {
 }
 
 .header-projects {
-    color: #fff;
+    color: black;
 }
 
 .header-projects a {
     margin-right: 85vw;
     font-weight: bold;
-    border-radius: 5px;
-    color: #fff;
+    border-radius: 10px;
+    color: black;
     text-decoration: none;
+    background-color: rgb(0, 150,150);
+    padding: 1rem;
     
 }
 
 
 .header-projects a:hover{
-    color: black;
+    color: white;
     cursor: pointer;
 }
 
 .main-about{
-    min-height: 69vh;
-    background-color: lightgray;
+    min-height: 69.8vh;
+    background-color: white;
     margin-top: -2vh;
 }
 
@@ -354,7 +365,7 @@ header {
     min-height: 85vh;
     max-width: 100%;
     margin: 0 auto;
-    background-color: lightgray;
+    background-color: white;
     padding: 5vh 0 5vh 0;
 }
 
@@ -386,7 +397,7 @@ header {
 }
 
 #btn-languages{
-    background-color: purple;
+    background-color: rgb(0, 150,150);
     color: #fff;
     font-size: 1.4rem;
     font-weight: 700;
@@ -398,19 +409,20 @@ header {
 }
 
 #btn-languages:hover{
-    background-color: #b70b80;
+    opacity: .8;
     cursor: pointer;
 
 }
 
 #btn-languages:active{
-    background-color: transparent;
+    opacity: .5;
 }
 
 .footer {
     width: 100%;
     height: 100px;
-    background-image: radial-gradient(circle at -14.09% 20.12%, #ffb790 0, #ffac96 8.33%, #ffa19b 16.67%, #ff949d 25%, #ff879c 33.33%, #f67a97 41.67%, #d86c8f 50%, #ba5f85 58.33%, #a0547b 66.67%, #894b72 75%, #75446a 83.33%, #653e64 91.67%, #583b5f 100%);
+    /* background-image: radial-gradient(circle at -14.09% 20.12%, #ffb790 0, #ffac96 8.33%, #ffa19b 16.67%, #ff949d 25%, #ff879c 33.33%, #f67a97 41.67%, #d86c8f 50%, #ba5f85 58.33%, #a0547b 66.67%, #894b72 75%, #75446a 83.33%, #653e64 91.67%, #583b5f 100%); */
+    background-color: var(--main-color);
     display: flex;
     flex-direction: column;
     align-items: center;
