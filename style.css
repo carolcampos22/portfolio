@@ -23,13 +23,6 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: var(--main-color);
-    /* background-image: radial-gradient(circle at -14.09% 20.12%, #ffb790 0, #ffac96 8.33%, #ffa19b 16.67%, #ff949d 25%, #ff879c 33.33%, #f67a97 41.67%, #d86c8f 50%, #ba5f85 58.33%, #a0547b 66.67%, #894b72 75%, #75446a 83.33%, #653e64 91.67%, #583b5f 100%); */
-    /**/
-    /*background-image: linear-gradient(to right, #a56ec1, #0d0863);*/
-    /*background-image: url('./assets/img.jpg');*/
-    /* background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,12 +35,12 @@ body {
 h1 {
     font-size: 50px;
     text-transform: uppercase;
-    letter-spacing: 2px; /*4px*/
+    letter-spacing: 2px;
 }
 
 h2 {
     text-transform: uppercase;
-    letter-spacing: 2px; /*4px*/
+    letter-spacing: 2px;
 }
 
 .social-media {
@@ -65,6 +58,20 @@ h2 {
     justify-content: center;
     align-items: center;
     transition: .5s ease-in-out;
+}
+
+#link-cv {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+#link-cv:hover{
+    color: hotpink;
+}
+
+#link-cv:active{
+    color: aqua;
 }
 
 a:hover {
@@ -222,10 +229,6 @@ a:hover {
     align-items: center;
     justify-content: center;
     background-color: var(--main-color);
-    /* background-image: url('./assets/background.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; */
     filter: grayscale(0.5);
     cursor: pointer;
     transform: scale(1.1);
@@ -307,10 +310,14 @@ a:hover {
 
 .perfil-img {
     margin-top: 10vh;
+    margin-left: 10vw;
 }
 
 .perfil-img img {
-    width: 30vw;
+    width: 25vw;
+    border: 10px solid rgb(0, 150,150);
+    border-radius: 10px;
+
 }
 
 #div-cv{
@@ -428,9 +435,14 @@ header {
     
 }
 
+.card-bs img {
+    width: 100%;
+}
+
 .image{
     width: 20vw;
     height: 14vh;
+    background-color: hotpink;
 }
 
 #btn-languages{
@@ -479,11 +491,15 @@ header {
     font-size: 2vh;
 }
 
-@media (max-width: 1030px){
+@media (max-width: 1300px){
     .container-data-img{
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        width: 80vw;
+    }
+
+    .container-data-img img {
+        width: 30vw;
+        margin-right: 30vw;
     }
 
     .social-media, .container-data-img h1,h2{
@@ -493,11 +509,20 @@ header {
     .header-projects a{
         margin-right: 70vw;
     }
+
+    #logo-whatsapp {
+        width: 10vw;
+    }
 }
 
 @media (max-width: 760px){
     .social-media, .container-data-img h1,h2{
         margin-right: 3vw;
+    }
+
+    .header-projects div a{
+        background-color: hotpink;
+        display: none;
     }
 
     .container-data-img{
@@ -507,10 +532,26 @@ header {
         margin-left: -8vw;
     }
 
+    .container-data-img img{
+        width: 50vw;
+    }
+
     .card-container{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .card-bs {
+        width: 90%;
+    }
+
+    .card-text p {
+        margin-top: 5vh;
+    }
+
+    #logo-whatsapp {
+        width: 12vw;
     }
 }
