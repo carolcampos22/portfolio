@@ -2,7 +2,7 @@ const textElement = document.querySelector(".text-about")
 const btnToggle = document.querySelector("#btn-languages")
 
 const texts = {
-    'pt-br': `<p>Olá! Seja bem-vindo(a) ao meu portfólio! Sou desenvolvedora web front-end com mais de 1 ano de experiência.</p>
+    'pt-br': `<p>Olá! Seja bem-vindo(a) ao meu portfólio! Sou desenvolvedora web front-end com mais de 1 ano de experiência e estudante de Engenharia de Software na UniAmérica Descomplica.</p>
       <p>Minha jornada no mundo da programação começou na faculdade de Física Médica, onde cursei disciplinas que
         envolviam programação (C/C++ e Python). Apesar das dificuldades e desafios iniciais, desenvolvi uma paixão pela
         área, além de um entusiasmo e curiosidade constantes para aprender mais. Desde então, tenho me dedicado
@@ -24,7 +24,7 @@ const texts = {
         adoraria ter a oportunidade de trabalharmos juntos. Vamos conversar sobre como posso contribuir com sua equipe e
         transformar suas ideias em realidade!</p>`,
 
-    'en-us': `<p>Hello! Welcome to my portfolio! I am a front-end web developer with over 1 year of experience.</p>
+    'en-us': `<p>Hello! Welcome to my portfolio! I am a front-end web developer with over 1 year of experience and Software Engineering student at UniAmérica Descomplica.</p>
 <p>My journey into the world of programming began in Medical Physics college, where I took courses involving programming (C/C++ and Python). Despite the initial difficulties and challenges, I developed a passion for the field, along with a constant enthusiasm and curiosity to learn more. Since then, I have dedicated myself exclusively to web development courses and bootcamps.<p></br>
 <p>In my projects, I focus on creating intuitive and responsive interfaces, always aiming to provide the best user experience. I work with languages like JavaScript and frameworks like React.js and Next.js, enhancing my ability to create dynamic and efficient applications. I use Styled-components to explore the power of styling at the component level, but I also value Tailwind CSS, Bootstrap, and preprocessors like Sass. Every project I develop contributes to my growth as a developer and demonstrates my ability to solve problems creatively and efficiently.</p></br>
 <p>What motivates me the most as a developer is the continuous pursuit of learning and new challenges. I am driven by curiosity and the desire to stay updated with the latest trends and best practices in front-end development. Additionally, I value teamwork and knowledge exchange, as I believe collaborating with other professionals is a valuable way to grow and progress in the technology field.</p></br>
