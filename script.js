@@ -2,40 +2,28 @@ const textElement = document.querySelector(".text-about")
 const btnToggle = document.querySelector("#btn-languages")
 
 const texts = {
-    'pt-br': `<p>Olá! Seja bem-vindo(a) ao meu portfólio! Sou desenvolvedora web front-end com mais de 1 ano de experiência e estudante de Engenharia de Software na UniAmérica Descomplica.</p>
-      <p>Minha jornada no mundo da programação começou na faculdade de Física Médica, onde cursei disciplinas que
-        envolviam programação (C/C++ e Python). Apesar das dificuldades e desafios iniciais, desenvolvi uma paixão pela
-        área, além de um entusiasmo e curiosidade constantes para aprender mais. Desde então, tenho me dedicado
-        exclusivamente a cursos e bootcamps de desenvolvimento web.</p> </br>
-      <p>Em meus projetos, foco em criar interfaces intuitivas e responsivas, sempre buscando proporcionar a melhor
-        experiência ao usuário. Trabalho com linguagens como JavaScript e com frameworks como React.js e
-        Next.js, aprimorando minha capacidade de criar aplicações dinâmicas e eficientes. Utilizo Styled-components para
-        explorar o poder da estilização no nível de componentes, mas também valorizo o Tailwind CSS, o Bootstrap e
-        pré-processadores como o Sass. Cada projeto que desenvolvo contribui para minha evolução como desenvolvedora e
-        demonstra minha capacidade de resolver problemas de forma criativa e eficiente.</p></br>
-      <p>O que mais me motiva como desenvolvedora é a busca contínua por aprendizado e novos desafios. Sou movida pela
-        curiosidade e pelo desejo de me manter atualizada em relação às últimas tendências e melhores práticas do
-        desenvolvimento front-end. Além disso, valorizo o trabalho em equipe e a troca de conhecimento, pois acredito
-        que colaborar com outros profissionais é uma maneira valiosa de crescer e progredir no campo da tecnologia.</p></br>
-      <p>Atualmente, estou entusiasmada com a perspectiva de ingressar em uma equipe inovadora e contribuir com minhas
-        habilidades no desenvolvimento web front-end. Sou apaixonada por construir produtos que tenham um impacto
-        positivo na vida das pessoas e estou ansiosa para fazer parte de projetos desafiadores e significativos. Se você
-        está procurando uma desenvolvedora web front-end dedicada, criativa e pronta para enfrentar novos desafios,
-        adoraria ter a oportunidade de trabalharmos juntos. Vamos conversar sobre como posso contribuir com sua equipe e
-        transformar suas ideias em realidade!</p>`,
+  'pt-br': `<p>Oi! Sou desenvolvedora web front-end, estudante de Engenharia de Software na Descomplica e também estou me aprofundando em Inteligência Artificial Aplicada pela Vai na Web — uma área que tem me conquistado e na qual quero me especializar.
 
-    'en-us': `<p>Hello! Welcome to my portfolio! I am a front-end web developer with over 1 year of experience and Software Engineering student at UniAmérica Descomplica.</p>
-<p>My journey into the world of programming began in Medical Physics college, where I took courses involving programming (C/C++ and Python). Despite the initial difficulties and challenges, I developed a passion for the field, along with a constant enthusiasm and curiosity to learn more. Since then, I have dedicated myself exclusively to web development courses and bootcamps.<p></br>
-<p>In my projects, I focus on creating intuitive and responsive interfaces, always aiming to provide the best user experience. I work with languages like JavaScript and frameworks like React.js and Next.js, enhancing my ability to create dynamic and efficient applications. I use Styled-components to explore the power of styling at the component level, but I also value Tailwind CSS, Bootstrap, and preprocessors like Sass. Every project I develop contributes to my growth as a developer and demonstrates my ability to solve problems creatively and efficiently.</p></br>
-<p>What motivates me the most as a developer is the continuous pursuit of learning and new challenges. I am driven by curiosity and the desire to stay updated with the latest trends and best practices in front-end development. Additionally, I value teamwork and knowledge exchange, as I believe collaborating with other professionals is a valuable way to grow and progress in the technology field.</p></br>
-<p>Currently, I am excited about the prospect of joining an innovative team and contributing my skills to front-end web development. I am passionate about building products that positively impact people's lives and am eager to be part of challenging and meaningful projects. If you are looking for a dedicated, creative, and ready-to-face-new-challenges front-end web developer, I would love the opportunity to work together. Let's talk about how I can contribute to your team and turn your ideas into reality!</p>`
+Minha história com a programação começou de um jeito curioso: durante a faculdade de Física Médica, tive contato com linguagens como C, C++ e Python… e foi aí que tudo mudou. Me apaixonei pelo universo da tecnologia e decidi seguir de vez esse caminho, mergulhando em cursos, bootcamps e, claro, na graduação certa.
+
+Desde então, venho desenvolvendo aplicações focadas em usabilidade, performance e design. Gosto de criar interfaces modernas e intuitivas com JavaScript, React.js, Next.js, Styled-components, Tailwind CSS, Sass e Bootstrap. Sempre buscando melhorar, aprender coisas novas e me superar a cada projeto.
+
+Sou movida pela curiosidade, adoro aprender e acredito muito no poder da colaboração. Se você procura alguém comprometida, criativa e pronta pra encarar desafios com empolgação, vamos bater um papo?</p>`,
+
+  'en-us': `<p>Hi there! I’m a front-end web developer, currently studying Software Engineering at Descomplica and diving deeper into Applied Artificial Intelligence through the Vai na Web program — a field I’ve been falling in love with and plan to specialize in.
+
+My journey into programming started in an unexpected place: during my Medical Physics degree, I was introduced to languages like C, C++, and Python... and that’s when everything changed. I discovered a real passion for tech and decided to fully switch paths, jumping into bootcamps, courses, and eventually, the right degree.
+
+Since then, I’ve been building user-focused, high-performance, and well-designed web applications. I love working with JavaScript, React.js, Next.js, Styled-components, Tailwind CSS, Sass, and Bootstrap — always aiming to level up and bring my best to each project.
+
+I'm driven by curiosity, constantly learning, and I believe strongly in the power of collaboration. If you're looking for someone dedicated, creative, and excited to take on new challenges, let’s talk!</p>`
 }
 
 let languageShown = 'pt-br'
 
 const toggleLanguage = () => {
-    languageShown = languageShown === 'pt-br' ? 'en-us' : 'pt-br'
-    textElement.innerHTML = texts[languageShown];
+  languageShown = languageShown === 'pt-br' ? 'en-us' : 'pt-br'
+  textElement.innerHTML = texts[languageShown];
 }
 
 btnToggle.addEventListener('click', toggleLanguage)
